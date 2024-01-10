@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap"
+      rel="stylesheet"
+    />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
@@ -23,20 +29,28 @@
         <form>
           <div class="label">
             <label for="">Cardholder Name</label>
-            <input type="text" />
+            <input
+              placeholder="Jane
+            Appleseed"
+              type="text"
+            />
           </div>
           <div class="label">
             <label for="">Card Number</label>
-            <input type="number" />
+            <input placeholder="1234 5678 9123 0000" type="number" />
           </div>
-          <div>
-            <div>
+          <div class="nestedLabels">
+            <div class="expire">
               <label for="">Expiry </label>
-              <span> 
-                <input type="number" /> <input type="number" />
+              <span>
+                <input class="exp" placeholder="MM" type="text" />
+                <input class="exp" placeholder="YY" type="text" />
               </span>
             </div>
-            <div><label for="">CVV</label> <input type="number" /></div>
+            <div class="label">
+              <label>CVV</label>
+              <input class="cvv" placeholder="e.g. 123" type="text" />
+            </div>
           </div>
           <button>Confirm</button>
         </form>

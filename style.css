@@ -1,33 +1,66 @@
 body {
   margin: 0;
   overflow: hidden;
+  font-family: "Space Grotesk", sans-serif;
+
 }
 main {
   display: flex;
 }
-.gradient{
- height: 100vh;
- width: 20rem;
+.gradient {
+  height: 100vh;
+  width: 24rem;
 }
 .right {
-  background-color: aquamarine;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.label{
-    display: flex;
-    flex-direction: column;
+.label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.nestedLabels {
+  display: flex;
+  justify-content: space-between;
+}
+.expire {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+span {
+  display: flex;
+  gap: 10px;
+}
+.exp {
+  width: 3rem;
+}
+button{
+  padding: 10px 10px;
+  border-radius: 8px;
+  border: none;
+  background-color: hsl(278, 68%, 11%);
+  color: white;
+  font-family: "Space Grotesk", sans-serif;
+}
+form {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  justify-content: center;
+  width: 22rem;
+  padding: 1rem;
 }
 
-form{
-    background-color: rgb(244, 2, 2);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: fit-content;
+input{
+  border-radius: 7px;
+  border: 2px solid rgb(225, 224, 224);
+  height: 30px;
+  padding-left: 10px;
 }
 
 @media (min-width: 320px) and (max-width: 768px) {
