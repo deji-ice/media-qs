@@ -20,10 +20,27 @@
     <link rel="stylesheet" href="style.css" />
     <title>Frontend Mentor | Interactive card details form</title>
   </head>
+
   <body>
     <main>
+      <div class="frontCard">
+        <img id="front" src="./images/bg-card-front.png" alt="" />
+        <div class="cardDetails">
+          <div class="circ"></div>
+          <div class="circTransP"></div>
+        </div>
+        <p class="cardNo">0000 0000 0000 0000</p>
+        <div class="cardName">
+          <p>JANE APPLESEED</p>
+          <p>00/00</p>
+        </div>
+      </div>
+
+      <img id="back" src="./images//bg-card-back.png" alt="" />
+
       <div class="left">
         <img class="gradient" src="./images/bg-main-desktop.png" alt="" />
+        <img class="gradientMobile" src="./images/bg-main-mobile.png" alt="" />
       </div>
       <div class="right">
         <form>
@@ -43,13 +60,13 @@
             <div class="expire">
               <label for="">Expiry </label>
               <span>
-                <input class="exp" placeholder="MM" type="text" />
-                <input class="exp" placeholder="YY" type="text" />
+                <input class="exp" placeholder="MM" type="number" />
+                <input class="exp" placeholder="YY" type="number" />
               </span>
             </div>
             <div class="label">
               <label>CVV</label>
-              <input class="cvv" placeholder="e.g. 123" type="text" />
+              <input class="cvv" placeholder="e.g. 123" type="number" />
             </div>
           </div>
           <button>Confirm</button>
